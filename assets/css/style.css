@@ -1,0 +1,91 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.kodfun-galeri {
+	display: flex;
+	height: 20rem;
+	gap: 1rem;
+}
+
+.kodfun-galeri > div {
+	flex: 1;
+	border-radius: 1rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+
+.kodfun-galeri > div:hover {
+	flex: 2;
+	border-radius: 1rem;
+}
+
+.content_img div {
+	position: relative;
+	float: left;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	margin-bottom: 5px;
+	visibility: hidden;
+	-webkit-transition: visibility 0s, opacity 0.5s linear;
+	transition: visibility 0s, opacity 0.5s linear;
+	text-transform: capitalize;
+}
+
+.content_img:hover div {
+	border-radius: 10px;
+	padding: 8px 15px;
+	visibility: visible;
+	opacity: 0.7;
+}
+
+.judul div {
+	background-color: #5d9798;
+	position: relative;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: visibility 0s, opacity 0.5s linear;
+	transition: visibility 0s, opacity 0.5s linear;
+}
+
+.judul:hover div {
+	opacity: 0.7;
+	visibility: visible;
+}
+
+#icons {
+	color: white;
+	transition: 1s all ease;
+	cursor: pointer;
+}
+
+#icons:hover {
+	text-shadow: #ffffff 0 0 15px;
+}
+
+.button {
+	background-color: #5d9798;
+	color: #191919;
+	text-transform: capitalize;
+}
+
+.button:hover {
+	box-shadow: #5d9798 0 0 10px;
+}
+
+.testi {
+	background-color: #ffffff;
+	opacity: 0.6;
+}
+
+.testi:hover {
+	box-shadow: #ffffff 0 0 15px;
+}
+
+.menu:hover {
+	text-shadow: #5d9798 0 0 10px;
+	color: #5d9798;
+}
